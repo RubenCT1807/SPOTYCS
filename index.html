@@ -6,15 +6,6 @@
   <title>SPOTYCS</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3K5GVZMCB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G3K5GVZMCB');
-</script>
 </head>
 <body>
   <header>
@@ -22,19 +13,20 @@
       <img src="image.png" alt="Logo SPOTYCS" class="logo-image">
       <span class="logo-text">SPOTYCS</span>
     </div>
-    <button class="menu-toggle" id="menu-toggle">☰</button>
-    <nav id="nav-menu" class="nav">
+    <!-- Menú desplegable mejorado -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+    <nav id="nav-menu" class="nav" aria-label="Menú de navegación">
       <ul>
-        <li><a href="#">Estadísticas</a></li>
-        <li><a href="#">Amigos</a></li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="#">Conciertos</a></li>
-        <li><a href="#">Salir del menú</a></li>
+        <li><a href="#" class="nav-link" aria-label="Ver estadísticas">Estadísticas</a></li>
+        <li><a href="#" class="nav-link" aria-label="Ver amigos">Amigos</a></li>
+        <li><a href="#" class="nav-link" aria-label="Ver quizzes">Quizzes</a></li>
+        <li><a href="#" class="nav-link" aria-label="Ver conciertos">Conciertos</a></li>
+        <li><a href="#" class="nav-link" aria-label="Cerrar sesión">Salir del menú</a></li>
       </ul>
     </nav>
     <div class="auth-buttons">
-      <a href="#" class="auth-link">Registrarse</a>
-      <a href="#" class="auth-link">Iniciar sesión</a>
+      <a href="#" class="auth-link btn-register" aria-label="Registrarse">Registrarse</a>
+      <a href="#" class="auth-link btn-login" aria-label="Iniciar sesión">Iniciar sesión</a>
     </div>
   </header>
 
